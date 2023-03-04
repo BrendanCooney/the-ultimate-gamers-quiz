@@ -5,8 +5,8 @@
 
 :root {
     --hue-neutral: 200;
-    --hue-wrong: 0
-    --hue-correct :145;
+    --hue-wrong: 0;
+    --hue-correct: 145;
 }
 
 header{
@@ -51,7 +51,7 @@ body.wrong {
 
 .btn {
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 110%, 30%);
+    border: 2px solid hsl(var(--hue), 110%, 30%);
     background-color: hsl(var(--hue), 110%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
@@ -59,3 +59,14 @@ body.wrong {
     outline: none;
 }
 
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
