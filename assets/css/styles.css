@@ -49,3 +49,13 @@ body.wrong {
     margin: 20px 0;
 }
 
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 110%, 30%);
+    background-color: hsl(var(--hue), 110%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
