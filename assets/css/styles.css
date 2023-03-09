@@ -45,40 +45,41 @@
     margin: 20px 0;
   }
   
-
-.btn {
+  .btn {
     --hue: var(--hue-neutral);
-    border: 2px solid hsl(var(--hue), 110%, 30%);
-    background-color: hsl(var(--hue), 110%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     border-color: black;
-}
-
-.btn.correct {
+  }
+  
+  .btn.correct {
     --hue: var(--hue-correct);
-}
-
-.btn.wrong {
+    color: black;
+  }
+  
+  .btn.wrong {
     --hue: var(--hue-wrong);
-}
-.start-btn, .next-btn{
+  }
+  
+  .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-}
-
-.controls {
+  }
+  
+  .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hide {
+  }
+  
+  .hide {
     display: none;
-}
+  }
