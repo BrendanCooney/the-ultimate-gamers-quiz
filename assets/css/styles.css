@@ -97,10 +97,27 @@ html {
 
 .header-area{
     position: absolute;
-    top: 50px;
+    top: 100px;
     color: black;
     font-size: 60px;
+    font-weight: bold;
 }
+
+.logo{
+  position: absolute;
+  top: 15px;
+  left: 100px;
+}
+
+.scores{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 
 .side-links {
   position: absolute;
@@ -120,7 +137,7 @@ html {
   border-radius: 10px;
 }
 
-.side-link-youtube {
+.side-link-learncode {
   background-color: red;
 }
 
@@ -128,16 +145,11 @@ html {
   background-color: #1DA1F2;
 }
 
-.side-link-github {
-  background-color: #6e5494;
+.side-link-gamingnews {
+  background-color: rgb(139, 59, 231);
 }
 
 .side-link-text {
   margin-left: 10px;
   font-size: 18px;
 }
-
-.side-link-icon {
-  color: white;
-  font-size: 30px;
-}  
