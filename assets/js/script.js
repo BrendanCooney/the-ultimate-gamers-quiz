@@ -78,19 +78,19 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: "What is 2 + 2?",
+    question: "Who is the main chracter in Minecraft?",
     answers: [
-      { text: "4", correct: true },
-      { text: "22", correct: false }
+      { text: "Steve", correct: true },
+      { text: "Alex", correct: false }
     ]
   },
   {
     question: "Who is the best YouTuber?",
     answers: [
-      { text: "Web Dev Simplified", correct: true },
-      { text: "Traversy Media", correct: true },
-      { text: "Dev Ed", correct: true },
-      { text: "Fun Fun Function", correct: true }
+      { text: "Dan TDM", correct: true },
+      { text: "Mr Beast", correct: true },
+      { text: "Preston", correct: true },
+      { text: "Yub", correct: true }
     ]
   },
   {
@@ -103,19 +103,22 @@ const questions = [
     ]
   },
   {
-    question: "Is web development fun?",
+    question: "What is Nintendo's Gaming Console Called?",
     answers: [
-      { text: "Kinda", correct: false },
-      { text: "YES!!!", correct: true },
-      { text: "Um no", correct: false },
-      { text: "IDK", correct: false }
+      { text: "MegaDrive", correct: false },
+      { text: "Switch", correct: true },
+      { text: "Swatch", correct: false },
+      { text: "PS2", correct: false }
     ]
   },
   {
-    question: "What is 4 * 2?",
+    question: "When was steam released?",
     answers: [
-      { text: "6", correct: false },
-      { text: "8", correct: true }
+      { text: "2004", correct: false },
+      { text: "2001", correct: false },
+      { text: "2010", correct: false },
+      { text: "2003", correct: true }
     ]
   }
 ];
+
