@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 
 let shuffledQuestions, currentQuestionIndex;
 
+
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
@@ -18,6 +19,7 @@ function startGame() {
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
+  onclick = alert('You are starting the game!');
 }
 
 function setNextQuestion() {
@@ -66,14 +68,36 @@ function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
     element.classList.add("correct");
+    incrementScore();
   } else {
     element.classList.add("wrong");
+    incrementWrongAnswer();
   }
 }
 
 function clearStatusClass(element) {
   element.classList.remove("correct");
   element.classList.remove("wrong");
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore() {
+
+  let oldScore = parseInt(document.getElementById("score").innerText);
+  document.getElementById("score").innerText = ++oldScore;
+
+}
+
+/**
+* Gets the current tally of incorrect answers from the DOM and increments it by 1
+*/
+function incrementWrongAnswer() {
+
+  let oldScore = parseInt(document.getElementById("incorrect").innerText);
+  document.getElementById("incorrect").innerText = ++oldScore;
+  
 }
 
 const questions = [
