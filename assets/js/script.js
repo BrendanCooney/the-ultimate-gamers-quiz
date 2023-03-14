@@ -19,7 +19,6 @@ function startGame() {
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
-  onclick = alert('You are starting the game!');
 }
 
 function setNextQuestion() {
