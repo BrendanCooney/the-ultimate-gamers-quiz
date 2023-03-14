@@ -112,9 +112,6 @@ html {
 .flex-header {
   position: absolute;
   top: 80px;
-}
-
-.flex-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,20 +119,30 @@ html {
   margin-bottom: 10px;
   margin-left: 10px;
   color: white;
+  background-color: rgb(4, 90, 40);
   font-size: 25px;
   font-weight: bold;
-  width: 600px;
+  width: 500px;
   padding: 10px 0;
   border-radius: 10px;
 }
 
-.scores{
+.score-area{
   position: absolute;
-  bottom: 195px;
+  bottom: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
   color: white;
-  left: 550px;
-  font-size: 30px;
-  font-weight: 500;
+  background-color: rgb(18, 139, 143);
+  font-size: 20px;
+  font-weight: bold;
+  width: 500px;
+  padding: 10px 0;
+  border-radius: 10px;
 
 }
 
