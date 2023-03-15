@@ -73,15 +73,35 @@ https://www.youtube.com/watch?v=riDzcEQbX6k&t=397s
 
 ## Content:
 
-The Logo was created with Canva. The Favicon was also created with Canva. 
+The Logo was created with Canva. The Favicon was also created with Canva.
+
+https://www.canva.com/
 
 The questions are questions that I came up with. My sons are avid gamers and the games mentioned are within their age bracket.
+
+I kept the colours similar to the previous project. If possible I will aim to keep the same theme throughout the projects for cosistency.
+
 
 
 ## Media:
 The only image used in this project is the logo. There are however media queries created to make sure all flex boxes and the gaming area are totally responsive. 
 
-## Other General Project Advice:
+## Technologies Used
+
+Languages used in project:
+HTML, CSS, Javascript
+
+Programs or Websites used:
+
+* Canva : For the Logo Design
+
+* Gitpod: This was used for building the project
+
+* Github: Github is used as the primary file library or host. 
+
+* Paint.net: I used Paint.net to rework the logo design and resize the favicon. 
+
+
 
 
 
