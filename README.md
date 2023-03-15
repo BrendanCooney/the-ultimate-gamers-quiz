@@ -67,15 +67,19 @@ This project was Deployed to Github fromo the source section. It was the master 
 ## Credits:
 I would like to thank the Code Institute for the opportunity once again. In my previous project I focussed mainly on Love Running as and example. This time I decided to focus on a tutorial that was not part of the course in order to give me more exposure to JavaScript. 
 
-I followed this tutorial and all credi goes to this developer and the code institute. 
+I followed this tutorial and all credit goes to this developer Kyle Cook and the Code Institute. 
 
 https://www.youtube.com/watch?v=riDzcEQbX6k&t=397s
 
 ## Content:
 
+The Logo was created with Canva. The Favicon was also created with Canva. 
+
+The questions are questions that I came up with. My sons are avid gamers and the games mentioned are within their age bracket.
+
 
 ## Media:
-
+The only image used in this project is the logo. There are however media queries created to make sure all flex boxes and the gaming area are totally responsive. 
 
 ## Other General Project Advice:
 
