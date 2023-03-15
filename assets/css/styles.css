@@ -129,7 +129,7 @@ html {
 
 .score-area{
   position: absolute;
-  bottom: 200px;
+  bottom: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
