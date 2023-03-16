@@ -1,6 +1,5 @@
 ![CI logo](/assets/images/gamers-quiz-logo3.png)
 
-`python3 -m http.server`
 
 # Welcome to the Ultimate Gaming Quiz. 
 
