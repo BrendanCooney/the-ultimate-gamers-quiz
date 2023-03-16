@@ -99,7 +99,9 @@ Programs or Websites used:
 
 * Github: Github is used as the primary file library or host. 
 
-* Paint.net: I used Paint.net to rework the logo design and resize the favicon. 
+* Paint.net: I used Paint.net to rework the logo design and resize the favicon.
+
+* Python Tutor: This was used for running and checking functions
 
 
 
