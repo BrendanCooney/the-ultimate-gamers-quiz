@@ -92,7 +92,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DFDFDF;
 }
 
 .header-area{
@@ -111,7 +110,7 @@ html {
 
 .flex-header {
   position: absolute;
-  top: 80px;
+  top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,6 +151,12 @@ html {
   right: 15px;
 }
 
+.side-links-top {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 .side-link {
   display: flex;
   align-items: center;
@@ -170,6 +175,10 @@ html {
 
 .side-link-club {
   background-color: #1DA1F2;
+}
+
+.side-link-rps {
+  background-color: #1d4903;
 }
 
 .side-link-gamingnews {

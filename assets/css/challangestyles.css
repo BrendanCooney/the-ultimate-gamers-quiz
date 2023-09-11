@@ -1,0 +1,114 @@
+html{min-height: 100%;
+position: relative;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f428f;
+    margin:0;
+  }
+
+  /* Header and footer */
+
+header {
+    text-align: center;
+    height: 50px;
+    color: #FFFFFF;
+  }
+
+footer {
+    position: absolute;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+  }
+
+
+  /* Game area*/
+
+  .game-area {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+  }
+
+  .control {
+    display:inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+  }
+
+  #messages {
+    height: : 20px;
+  }
+
+  .player {
+    background-color: lightblue;
+    float: left;
+    width: 45%;
+  }
+
+  .player-image {
+    width: 75%;
+  }
+
+  .computer {
+    background-color: lightcoral;
+    float: right;
+    width: 45%;
+  }
+
+  .computer-image {
+    width: 75%;
+  }
+
+  /* Hover Button */
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

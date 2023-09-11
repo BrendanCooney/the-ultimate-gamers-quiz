@@ -50,11 +50,13 @@ function resetState() {
 
 function selectAnswer(e) {
   const selectedButton = e.target;
+  console.log("Selected button: ", selectedButton)
   const correct = selectedButton.dataset.correct;
-  setStatusClass(document.body, correct);
-  Array.from(answerButtonsElement.children).forEach((button) => {
-    setStatusClass(button, button.dataset.correct);
-  });
+  setStatusClass(selectedButton, correct)
+  // setStatusClass(document.body, correct);
+  // Array.from(answerButtonsElement.children).forEach((button) => {
+  //   setStatusClass(button, button.dataset.correct);
+  // });
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
@@ -65,6 +67,7 @@ function selectAnswer(e) {
 
 function setStatusClass(element, correct) {
   clearStatusClass(element);
+  console.log("Element: ", element)
   if (correct) {
     element.classList.add("correct");
     incrementScore();
@@ -83,8 +86,10 @@ function clearStatusClass(element) {
  * Gets the current score from the DOM and increments it by 1
  */
 function incrementScore() {
+  console.log("incrementScore called")
 
   let oldScore = parseInt(document.getElementById("score").innerText);
+  console.log("Right Ans Score: ", oldScore)
   document.getElementById("score").innerText = ++oldScore;
 
 }
@@ -93,10 +98,20 @@ function incrementScore() {
 * Gets the current tally of incorrect answers from the DOM and increments it by 1
 */
 function incrementWrongAnswer() {
+  console.log("incrementWrongAnswer called")
 
   let oldScore = parseInt(document.getElementById("incorrect").innerText);
+  console.log("Wrong Ans Score: ", oldScore)
   document.getElementById("incorrect").innerText = ++oldScore;
   
+}
+
+function UpdateScores(correct) {
+  if (correct) {
+    incrementScore();
+  } else {
+    incrementWrongAnswer();
+  }
 }
 
 const questions = [
