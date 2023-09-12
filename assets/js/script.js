@@ -7,7 +7,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 let shuffledQuestions, currentQuestionIndex;
 
 
-startButton.addEventListener("click", startGame);
+startButton.addEventListener("click", startGame, startGameMessage);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   setNextQuestion();
@@ -19,6 +19,10 @@ function startGame() {
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove("hide");
   setNextQuestion();
+}
+
+function startGameMessage() {
+alert('You have started the Quiz! Good Luck!');  
 }
 
 function setNextQuestion() {
