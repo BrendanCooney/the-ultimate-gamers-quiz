@@ -104,8 +104,7 @@ html {
 
 .logo{
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 0px;
 }
 
 .flex-header {
@@ -137,6 +136,24 @@ html {
   margin-left: 10px;
   color: white;
   background-color: rgb(18, 139, 143);
+  font-size: 20px;
+  font-weight: bold;
+  width: 500px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.timer-area{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: rgb(2, 2, 2);
+  background-color: rgb(25, 205, 211);
   font-size: 20px;
   font-weight: bold;
   width: 500px;

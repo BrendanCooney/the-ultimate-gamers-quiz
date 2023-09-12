@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/images/gamers-quiz-logo3.png" alt="logo"> 
+        <img class="logo" src="assets/images/gamers-quiz-light-blue.png" alt="logo"> 
 
         <h1 class="header">Welcome to The Ultimate Gamers Quiz!</h1>
+
     
         <div>
           <a href="quiz.html">
@@ -18,5 +19,17 @@
           </a>
        </div>
 
+       <h2>
+        Hurry up..! <span id="timer">0</span> The clock is ticking...
+       </h2>
+       <script>
+        setInterval(function(){ 
+          let timerElement = document.getElementById('timer');
+          let currentTime = timerElement.innerHTML;
+          currentTime++;
+          timerElement.innerHTML = currentTime;
+        }, 1000);
+      </script>
+  
 </body>
 </html>

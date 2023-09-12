@@ -5,15 +5,17 @@ const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 
 let shuffledQuestions, currentQuestionIndex;
+startButton.addEventListener("click", startGame);
 
 
-startButton.addEventListener("click", startGame, startGameMessage);
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   setNextQuestion();
 });
 
 function startGame() {
+  document.getElementById("incorrect").innerText = "0";
+  document.getElementById("score").innerText = "0";
   startButton.classList.add("hide");
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
@@ -21,9 +23,12 @@ function startGame() {
   setNextQuestion();
 }
 
-function startGameMessage() {
-alert('You have started the Quiz! Good Luck!');  
-}
+setInterval(function(){ 
+  let timerElement = document.getElementById('timer');
+  let currentTime = timerElement.innerHTML;
+  currentTime++;
+  timerElement.innerHTML = currentTime;
+}, 1000);
 
 function setNextQuestion() {
   resetState();
