@@ -7,14 +7,14 @@ https://brendancooney.github.io/the-ultimate-gamers-quiz/
 
 This Project is a bacic quiz with a question area, a heading and some side links. There is also a score section counting the score of the project. This website is purely a fun exercise and provides a basic general knowledge quiz around gaming. The website is designed as a fun exercise for young Gamers. There are also links to the code institute showing them where to go if they would like to learn how to code and gaming news. There is also a link to the Global Gamers Club which encourages young Gamers to join so they can play together in a safe environment.  
 
-![Responsive Website](/assets/images/ugc-responsive.PNG)
+![Responsive Website](/assets/images/responsive1.PNG)
 
 ## Features
 ------------
 
 The features at the top of the quiz game page are the Logo and Heading. The Logo was designed in Canva and the heading is in a Flex Box designed in CSS.
 
-![Logo and Heading](/assets/images/logo-and-heading.PNG)
+![Logo and Heading](/assets/images/responsive2.PNG)
 
 ### The Game Area 
 
@@ -24,11 +24,11 @@ The features at the top of the quiz game page are the Logo and Heading. The Logo
 
 * Once started the quiz runs through a random sequence of questions that the player should answer. If the answer is correct the background colour turns green. If the background goes red the background colour goes red. 
 
-![Correct Example](/assets/images/correct-answer-background.PNG)
+![Correct Example](/assets/images/correct.PNG)
 
 * This is an example of an incorrect answer.
 
-![Incorrect Answer](/assets/images/incorrect-answer-background.PNG)
+![Incorrect Answer](/assets/images/incorrect.PNG)
 
 ### External Links
 There are some external links for quiz players to explore, they are the type of website that may be of interest to a gamer taking the quiz.

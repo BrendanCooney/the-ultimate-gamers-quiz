@@ -252,13 +252,11 @@ header {
 
   .logo {
       width: 100%;
-      float: centre;
       padding: 0;
   }
 
   .banner {
     width: 100%;
-    float: centre;
     padding: 0;
 }
   .side-link-text {

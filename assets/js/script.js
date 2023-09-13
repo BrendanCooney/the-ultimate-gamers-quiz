@@ -123,13 +123,6 @@ function incrementWrongAnswer() {
 * Updates the scores
 */
 
-function UpdateScores(correct) {
-  if (correct) {
-    incrementScore();
-  } else {
-    incrementWrongAnswer();
-  }
-}
 
 const questions = [
   {
