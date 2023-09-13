@@ -51,16 +51,23 @@ The JS Hint Validator came back with some warnings. This project is was work don
 
 ### Lighthouse
 
-The website performed well in the Lighthouse checks for desktop devices.
+The website performed well in the Lighthouse checks for responsive desktop displays  on the index page.
 
-![Lighthouse Desktop](/assets/images/lighthouse-desktop.PNG)
+![Lighthouse Desktop](/assets/images/lighthouse_new_1.PNG)
 
-The Website was slightly weaker on mobile devices.
-![Lighthouse Mobile](/assets/images/lighthouse-mobile.PNG)
+The Website was performed well on responsive desktop displays on the game page. 
+![Lighthouse Desktop Game](/assets/images/lighthouse_new_2.PNG)
+
+![Lighthouse Mobile Pg1](/assets/images/lighthouse_mobile_1.PNG)
+
+The Website was performed well on responsive desktop displays on the game page. 
+![Lighthouse Mobile Pg2](/assets/images/lighthouse_mobile_2.PNG)
+
+
 
 
 ## Unfixed Bugs:
-At time of Deployment the counting score function does not work correctly. This is a work in progress. 
+All bugs were tested and retested manually. I attempted to add more questions but this stopped functionality so I did not add more.  
 
 ## Deployment:
 This project was Deployed to Github fromo the source section. It was the master branch.
@@ -71,6 +78,14 @@ I would like to thank the Code Institute for the opportunity once again. In my p
 I followed this tutorial and all credit goes to this developer Kyle Cook and the Code Institute. 
 
 https://www.youtube.com/watch?v=riDzcEQbX6k&t=397s
+
+W3Schools assisted me with alert messages: https://www.w3schools.com/jsref/met_win_alert.asp
+
+Code Institute: Couning Timer 
+
+Student Support Assisted me with solving the counter problem
+
+My Tutor  Assisted me with resetting the score. 
 
 ## Content:
 
@@ -85,7 +100,7 @@ I kept the colours similar to the previous project. If possible I will aim to ke
 
 
 ## Media:
-The only image used in this project is the logo. There are however media queries created to make sure all flex boxes and the gaming area are totally responsive. 
+The Bannners are a new edition and incorporate the logo. There are however media queries created to make sure all flex boxes and the gaming area are totally responsive. 
 
 ## Technologies Used
 
@@ -102,7 +117,7 @@ Programs or Websites used:
 
 * Paint.net: I used Paint.net to rework the logo design and resize the favicon.
 
-* Python Tutor: This was used for running and checking functions
+* JSHint was used to help me with the JavaScript
 
 
 
