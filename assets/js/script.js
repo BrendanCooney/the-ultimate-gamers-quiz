@@ -13,6 +13,9 @@ nextButton.addEventListener("click", () => {
   setNextQuestion();
 });
 
+/**
+ * Starts the Game 
+ */
 function startGame() {
   document.getElementById("incorrect").innerText = "0";
   document.getElementById("score").innerText = "0";
@@ -23,18 +26,18 @@ function startGame() {
   setNextQuestion();
 }
 
-setInterval(function(){ 
-  let timerElement = document.getElementById('timer');
-  let currentTime = timerElement.innerHTML;
-  currentTime++;
-  timerElement.innerHTML = currentTime;
-}, 1000);
 
+/**
+ * Calls the next question 
+ */
 function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+/**
+ * Displays the current question. 
+ */
 function showQuestion(question) {
   questionElement.innerText = question.question;
   question.answers.forEach((answer) => {
@@ -59,13 +62,10 @@ function resetState() {
 
 function selectAnswer(e) {
   const selectedButton = e.target;
-  console.log("Selected button: ", selectedButton)
+
   const correct = selectedButton.dataset.correct;
   setStatusClass(selectedButton, correct)
-  // setStatusClass(document.body, correct);
-  // Array.from(answerButtonsElement.children).forEach((button) => {
-  //   setStatusClass(button, button.dataset.correct);
-  // });
+  
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
@@ -74,9 +74,13 @@ function selectAnswer(e) {
   }
 }
 
+/**
+ * Displays the colour of the correct or incorrect answer. 
+ */
+
 function setStatusClass(element, correct) {
   clearStatusClass(element);
-  console.log("Element: ", element)
+ 
   if (correct) {
     element.classList.add("correct");
     incrementScore();
@@ -95,10 +99,10 @@ function clearStatusClass(element) {
  * Gets the current score from the DOM and increments it by 1
  */
 function incrementScore() {
-  console.log("incrementScore called")
+  
 
   let oldScore = parseInt(document.getElementById("score").innerText);
-  console.log("Right Ans Score: ", oldScore)
+  
   document.getElementById("score").innerText = ++oldScore;
 
 }
@@ -107,13 +111,17 @@ function incrementScore() {
 * Gets the current tally of incorrect answers from the DOM and increments it by 1
 */
 function incrementWrongAnswer() {
-  console.log("incrementWrongAnswer called")
+  
 
   let oldScore = parseInt(document.getElementById("incorrect").innerText);
-  console.log("Wrong Ans Score: ", oldScore)
+
   document.getElementById("incorrect").innerText = ++oldScore;
   
 }
+
+/**
+* Updates the scores
+*/
 
 function UpdateScores(correct) {
   if (correct) {
@@ -167,5 +175,6 @@ const questions = [
       { text: "2003", correct: true }
     ]
   }
+  
 ];
 

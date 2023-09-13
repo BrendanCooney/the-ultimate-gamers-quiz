@@ -102,28 +102,26 @@ html {
     font-weight: bold;
 }
 
+.banner {
+  position: absolute;
+  top: 0px;
+
+}
+
 .logo{
   position: absolute;
   top: 0px;
-}
-
-.flex-header {
-  position: absolute;
-  top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  color: white;
-  background-color: rgb(4, 90, 40);
-  font-size: 25px;
-  font-weight: bold;
-  width: 500px;
-  padding: 10px 0;
-  border-radius: 10px;
 }
+
+header {
+  text-align: center;
+  height: 50px;
+  color: #FFFFFF;
+}
+
 
 .score-area{
   position: absolute;
@@ -136,24 +134,6 @@ html {
   margin-left: 10px;
   color: white;
   background-color: rgb(18, 139, 143);
-  font-size: 20px;
-  font-weight: bold;
-  width: 500px;
-  padding: 10px 0;
-  border-radius: 10px;
-}
-
-.timer-area{
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  color: rgb(2, 2, 2);
-  background-color: rgb(25, 205, 211);
   font-size: 20px;
   font-weight: bold;
   width: 500px;
@@ -207,6 +187,48 @@ html {
   font-size: 18px;
 }
 
+/* Hover Button */
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 @media screen and (max-width: 1200px) {
 
@@ -229,10 +251,16 @@ html {
   }
 
   .logo {
-      width: 15%;
-      float: left;
+      width: 100%;
+      float: centre;
       padding: 0;
   }
+
+  .banner {
+    width: 100%;
+    float: centre;
+    padding: 0;
+}
   .side-link-text {
     margin-left: 10px;
     font-size: 15px;
