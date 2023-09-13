@@ -47,7 +47,7 @@ Tests for the CSS were also done on W3C CSS Validator
 
 ### JSHint Validator
 
-The JS Hint Validator came back with some warnings. This project is was work done from a tutorial as a result the syntax hase som warnings. 
+The JS Hint Validator came back with some warnings. This project is was work done from a tutorial as a result the syntax hase some warnings. 
 
 ### Lighthouse
 
@@ -70,7 +70,7 @@ The Website was performed well on responsive desktop displays on the game page.
 All bugs were tested and retested manually. I attempted to add more questions but this stopped functionality so I did not add more.  
 
 ## Deployment:
-This project was Deployed to Github fromo the source section. It was the master branch.
+This project was Deployed to Github from the source section. It was the master branch.
 
 ## Credits:
 I would like to thank the Code Institute for the opportunity once again. In my previous project I focussed mainly on Love Running as and example. This time I decided to focus on a tutorial that was not part of the course in order to give me more exposure to JavaScript. 
@@ -83,7 +83,8 @@ W3Schools assisted me with alert messages: https://www.w3schools.com/jsref/met_w
 
 Code Institute: Couning Timer 
 
-Student Support Assisted me with solving the counter problem
+Student Support Assisted me with solving the counter problem and a styling a link as a button.
+
 
 My Tutor  Assisted me with resetting the score. 
 
